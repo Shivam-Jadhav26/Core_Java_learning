@@ -1,0 +1,28 @@
+package P_Recursion;
+
+import java.util.Scanner;
+
+public class g_power {
+    public static int power(int a,int b){
+        if (b==0)return 1;
+        int ans = a*power(a,b-1);
+        return ans;
+
+    }
+
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no");
+        int a = sc.nextInt();
+        System.out.println("Enter the power");
+        int b = sc.nextInt();
+
+        power(a, b);
+
+        int aa =         power(a, b);
+
+        System.out.println(aa);
+        sc.close();
+    }
+}
